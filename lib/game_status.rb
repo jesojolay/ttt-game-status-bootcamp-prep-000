@@ -71,6 +71,7 @@ def winner(board)
     puts wins[1]
     if board[wins[0]] = "X"
         win_X = "X"
+        return win_X
     # elsif board[wins[0]] = "O"
 
     end
@@ -81,3 +82,4 @@ def winner(board)
     # end
 end
  puts winner(board)
+
