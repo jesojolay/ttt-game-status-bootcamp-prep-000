@@ -62,3 +62,4 @@ def over?(board)
         return false
     end
 end
+puts over?(board)
