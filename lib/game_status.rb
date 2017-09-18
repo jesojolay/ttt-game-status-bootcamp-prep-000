@@ -64,23 +64,25 @@ def over?(board)
 end
 
 def winner(board)
-    wins = []
-    wins << won?(board)[0]
-    wins << won?(board)[1]
-    wins << won?(board)[2]
-    win_X = ""
-    win_O = ""
-    if board[wins[0]] == "X"
-        win_X = "X"
-    elsif board[wins[0]] = "O"
-        win_O = "O"
-    end
-    if win_X != ""
-        return win_X
-    elsif  win_O != ""
-        return win_O
+    if won?(board) != false
+        wins = []
+        wins << won?(board)[0]
+        wins << won?(board)[1]
+        wins << won?(board)[2]
+        win_X = ""
+        win_O = ""
+        if board[wins[0]] == "X"
+            win_X = "X"
+        elsif board[wins[0]] = "O"
+            win_O = "O"
+        end
+        if win_X != ""
+            return win_X
+        elsif  win_O != ""
+            return win_O
+        end
     else
-        return nil
+        return nil    
     end
 end
 puts winner(board)
