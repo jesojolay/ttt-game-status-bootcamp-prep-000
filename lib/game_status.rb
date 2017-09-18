@@ -74,9 +74,9 @@ def winner(board)
         win_O = "O"
     end
     if win_X != " "
-        return "X"
+        return win_X
     elsif  win_O != " "
-        return "O"
+        return win_O
     end
 end
 puts winner(board)
