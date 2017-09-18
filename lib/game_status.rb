@@ -68,7 +68,7 @@ def winner(board)
     wins << won?(board)[0]
     wins << won?(board)[1]
     wins << won?(board)[2]
-    puts wins[0]
+    puts wins[1]
     if board[wins[0]] = "X"
     win_X = "X"
     elsif board[wins[0]] = "O"
