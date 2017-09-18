@@ -1,4 +1,4 @@
-board = ["X", " ", "X", " ", "X", " ", "O", "O", " "]
+board = ["X", "X", "X", " ", " ", " ", " ", " ", " "]
 # Helper Method
 def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
@@ -67,9 +67,9 @@ def winner(board)
     wins = won?(board)
     win_X = board[wins[0]] = "X"
     win_O = board[wins[0]] = "O"
-    if !(win_X.nil?) 
+    if !(win_X.nil?)
         return "X"
     else
-        return "O"    
-    end    
+        return "O"
+    end
 end
