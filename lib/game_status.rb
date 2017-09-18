@@ -38,9 +38,11 @@ end
 return falsy
 end
 
+
 def full?(board)
     board.all? do |pos|
         pos != " "
     end
 end
+
 
