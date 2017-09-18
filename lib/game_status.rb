@@ -64,5 +64,12 @@ def over?(board)
 end
 
 def winner(board)
-    
+    wins = won?(board)
+    win_X = board[wins[0]] = "X"
+    win_O = board[wins[0]] = "O"
+    if !(win_X.nil?) 
+        return "X"
+    else
+        return "O"    
+    end    
 end
