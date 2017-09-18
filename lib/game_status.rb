@@ -43,4 +43,4 @@ def full?(board)
         pos != " "
     end
 end
-puts full?(board)
+
