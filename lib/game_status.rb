@@ -27,7 +27,7 @@ def won?(board)
         posb_3 = board[posw_3];
 
         if posb_1 == "X" && posb_2 == "X" && posb_3 == "X"
-            wins = [posw_1,posw_2,posb_3]
+            wins = [posw_1,posw_2,posw_3]
             return wins
     end
 end
