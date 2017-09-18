@@ -79,6 +79,8 @@ def winner(board)
         return win_X
     elsif  win_O != ""
         return win_O
+    else
+        return nil    
     end
 end
 puts winner(board)
