@@ -37,4 +37,9 @@ def won?(board)
 end
 return falsy
 end
-puts won?(board).inspect
+
+def full?(board)
+    board.all? do |pos|
+        pos != " "
+    end    
+end
