@@ -1,4 +1,4 @@
-board = ["X", "O", "X", "O", "X", "X", "O", "X", "O"]
+board = ["X", " ", "X", "O", " ", "X", "O", "X", "O"]
 # Helper Method
 def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
