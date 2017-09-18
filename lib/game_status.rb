@@ -35,5 +35,6 @@ def won?(board)
             falsy = false
     end
 end
+return falsy
 end
 puts won?(board).inspect
