@@ -73,4 +73,4 @@ def winner(board)
         return "O"
     end
 end
-puts winner(board)
+puts winner(board).inspect
