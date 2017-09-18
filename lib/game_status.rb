@@ -71,10 +71,8 @@ def winner(board)
 
     if board[wins[0]] == "X"
         win_X = "X"
-        return win_X
     elsif board[wins[0]] = "O"
         win_O = "O"
-        return win_O
     end
     if win_X != " "
         return win_X
