@@ -73,9 +73,9 @@ def winner(board)
     elsif board[wins[0]] = "O"
         win_O = "O"
     end
-    if win_X == " "
+    if win_X != " "
         return "X"
-    elsif  win_O == " "
+    elsif  win_O != " "
         return "O"
     end
 end
