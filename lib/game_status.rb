@@ -30,5 +30,4 @@ def won?(board)
             wins = [posw_1,posw_2,posb_3]
             return wins
     end
-
 end
