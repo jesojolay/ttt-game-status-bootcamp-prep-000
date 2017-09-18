@@ -29,8 +29,7 @@ def won?(board)
         if posb_1 == "X" && posb_2 == "X" && posb_3 == "X" || posb_1 == "O" && posb_2 == "O" && posb_3 == "O"
             wins = [posw_1,posw_2,posw_3]
             return wins
-        else
-            return false
+    
     end
 end
 end
