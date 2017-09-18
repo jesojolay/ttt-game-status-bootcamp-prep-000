@@ -32,4 +32,4 @@ def won?(board)
     end
 end
 end
-puts won?(board)
+won?(board).inspect
