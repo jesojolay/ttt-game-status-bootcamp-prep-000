@@ -73,7 +73,7 @@ def winner(board)
         win_X = "X"
         return win_X
     elsif board[wins[0]] = "O"
-        win_X = "O"
+        win_O = "O"
         return win_O
     end
     # if win_X != " "
