@@ -80,4 +80,4 @@ def winner(board)
         return win_O
     end
 end
-puts winner(board)
+ winner(board)
