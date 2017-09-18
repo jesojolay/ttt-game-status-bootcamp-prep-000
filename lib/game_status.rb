@@ -1,4 +1,4 @@
-board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+board = ["X", "X", "X", " ", " ", " ", " ", " ", " "]
 # Helper Method
 def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
@@ -56,6 +56,10 @@ def draw?(board)
 end
 
 def over?(board)
-
+    if won?(board)
+        return true
+    else
+        return false     
+    end    
 end
 puts over?(board)
