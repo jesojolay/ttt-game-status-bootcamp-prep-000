@@ -80,7 +80,7 @@ def winner(board)
     elsif  win_O != ""
         return win_O
     else
-        return nil    
+        return nil
     end
 end
 puts winner(board)
