@@ -1,3 +1,4 @@
+board = ["X", "X", "X", " ", " ", " ", " ", " ", " "]
 # Helper Method
 def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
@@ -20,7 +21,7 @@ def won?(board)
         posw_1 = win[0];
         posw_2 = win[1];
         posw_3 = win[2];
-        
+
         posb_1 = board[posw_1];
         posb_2 = board[posw_2];
         posb_3 = board[posw_3];
@@ -29,5 +30,5 @@ def won?(board)
             wins = [posw_1,posw_2,posb_3]
             return wins
     end
-    
+
 end
