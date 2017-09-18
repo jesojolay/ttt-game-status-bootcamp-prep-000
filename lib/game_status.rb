@@ -17,6 +17,7 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
+    falsy = false
     WIN_COMBINATIONS.each do |win|
         posw_1 = win[0];
         posw_2 = win[1];
@@ -28,8 +29,10 @@ def won?(board)
 
         if posb_1 == "X" && posb_2 == "X" && posb_3 == "X" || posb_1 == "O" && posb_2 == "O" && posb_3 == "O"
             wins = [posw_1,posw_2,posw_3]
+            falsy = true
             return wins
-
+        else
+            falsy = false
     end
 end
 end
