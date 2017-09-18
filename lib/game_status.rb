@@ -69,7 +69,7 @@ def winner(board)
     win_O = board[wins[0]] = "O"
     if !(win_X.nil?)
         return "X"
-    else
+    elsif !(win_O.nil?)
         return "O"
     end
 end
