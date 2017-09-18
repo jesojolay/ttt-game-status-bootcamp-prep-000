@@ -76,4 +76,4 @@ def winner(board)
         return "O"
     end
 end
-winner(board)
+puts winner(board)
