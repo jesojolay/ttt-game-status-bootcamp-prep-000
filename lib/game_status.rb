@@ -64,7 +64,7 @@ def over?(board)
 end
 
 def winner(board)
-    puts wins = won?(board)
+    puts wins = won?(board).inspect
     win_X = board[wins[0]] = "X"
     win_O = board[wins[0]] = "O"
     if win_X == " "
