@@ -70,9 +70,9 @@ def winner(board)
     wins << won?(board)[2]
     puts wins[1]
     if board[wins[0]] = "X"
-    return true
-    elsif board[wins[0]] = "O"
-        win_O = "O"
+        return true
+    # elsif board[wins[0]] = "O"
+        
     end
     # if win_X != " "
     #     return win_X
